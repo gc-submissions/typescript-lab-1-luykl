@@ -9,7 +9,9 @@ mountains.push({name: "Everest", height: 29029});
 mountains.push({name: "Denali", height: 20310});
 
 export function findNameOfTallestMountain(mountainsArray: Mountain[]):string {
-    
+    if (mountainsArray.length === 0){
+        return "";
+    } else {
         let highestHeight:number = 0;
         let highestMountain:Mountain = mountainsArray[0];
         for (let mountain of mountainsArray) {
@@ -20,8 +22,8 @@ export function findNameOfTallestMountain(mountainsArray: Mountain[]):string {
         }
         
         return `${highestMountain.name}`;
-
+    }
 }
 
-let tallest:string = findNameOfTallestMountain(mountains);
+let tallest:string = findNameOfTallestMountain([]);
 console.log(tallest);
