@@ -18,7 +18,6 @@ export function calcInventoryValue(inventoryArray: InventoryItem[]):number {
     return total;  
     }
     
-    
 
 let totalValue:number = calcInventoryValue(inventory);
 console.log(totalValue); 

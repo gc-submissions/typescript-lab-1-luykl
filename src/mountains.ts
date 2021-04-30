@@ -19,11 +19,10 @@ export function findNameOfTallestMountain(mountainsArray: Mountain[]):string {
                 highestHeight = mountain.height
                 highestMountain = mountain;
             }
-        }
-        
+        }      
         return `${highestMountain.name}`;
     }
 }
 
-let tallest:string = findNameOfTallestMountain([]);
+let tallest:string = findNameOfTallestMountain(mountains);
 console.log(tallest);
